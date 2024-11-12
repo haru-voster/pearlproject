@@ -72,16 +72,16 @@ https://templatemo.com/tm-569-edu-meeting
                       <ul class="nav">
                           <li><a href="{% url 'home' %}">Home</a></li>
                           <li><a href="{% url 'meetings' %}" class="active">Meetings</a></li>
-                          <li><a href="index.html">Apply Now</a></li>
+                          <li><a href="{% url 'home' %}">Apply Now</a></li>
                           <li class="has-sub">
                               <a href="javascript:void(0)">Pages</a>
                               <ul class="sub-menu">
-                                  <li><a href="meetings.html">Upcoming Meetings</a></li>
-                                  <li><a href="meeting_details.html">Meeting Details</a></li>
+                                  <li><a href="{% url 'meetings' %}">Upcoming Meetings</a></li>
+                                  <li><a href="{% url 'meeting_details' %}">Meeting Details</a></li>
                               </ul>
                           </li>
-                          <li><a href="index.html">Courses</a></li> 
-                          <li><a href="index.html">Contact Us</a></li> 
+                          <li><a href="{% url 'home' %}">Courses</a></li> 
+                          <li><a href="{% url 'home' %}">Contact Us</a></li> 
                       </ul>        
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -128,13 +128,13 @@ https://templatemo.com/tm-569-edu-meeting
                       <div class="price">
                         <span>$14.00</span>
                       </div>
-                      <a href="meeting_details.html"><img src="assets/images/meeting-01.jpg" alt=""></a>
+                      <a href="{% url 'meeting_details' %}"><img src="{% static 'assets/images/meeting-01.jpg' %}" alt=""></a>
                     </div>
                     <div class="down-content">
                       <div class="date">
                         <h6>Nov <span>12</span></h6>
                       </div>
-                      <a href="meeting_details.html"><h4>New Lecturers Meeting</h4></a>
+                      <a href="{% url 'meeting_details' %}"><h4>New Lecturers Meeting</h4></a>
                       <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ https://templatemo.com/tm-569-edu-meeting
                       <div class="date">
                         <h6>Nov <span>14</span></h6>
                       </div>
-                      <a href="meeting_details.html"><h4>Online Teaching Techniques</h4></a>
+                      <a href="{% url 'meeting_details' %}"><h4>Online Teaching Techniques</h4></a>
                       <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
                     </div>
                   </div>
@@ -162,13 +162,13 @@ https://templatemo.com/tm-569-edu-meeting
                       <div class="price">
                         <span>$24.00</span>
                       </div>
-                      <a href="meeting_details.html"><img src="assets/images/meeting-03.jpg" alt=""></a>
+                      <a href="meeting_details.html"><img src="{% static 'assets/images/meeting-03.jpg' %}" alt=""></a>
                     </div>
                     <div class="down-content">
                       <div class="date">
                         <h6>Nov <span>16</span></h6>
                       </div>
-                      <a href="meeting_details.html"><h4>Network Teaching Concept</h4></a>
+                      <a href="{% url 'meeting_details' %}"><h4>Network Teaching Concept</h4></a>
                       <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
                     </div>
                   </div>
@@ -179,13 +179,13 @@ https://templatemo.com/tm-569-edu-meeting
                       <div class="price">
                         <span>$32.00</span>
                       </div>
-                      <a href="meeting_details.html"><img src="assets/images/meeting-04.jpg" alt=""></a>
+                      <a href="{% url 'meeting_details' %}"><img src="{% static 'assets/images/meeting-04.jpg' %}" alt=""></a>
                     </div>
                     <div class="down-content">
                       <div class="date">
                         <h6>Nov <span>18</span></h6>
                       </div>
-                      <a href="meeting_details.html"><h4>Online Teaching Tools</h4></a>
+                      <a href="{% url 'meeting_details' %}"><h4>Online Teaching Tools</h4></a>
                       <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
                     </div>
                   </div>
@@ -196,13 +196,13 @@ https://templatemo.com/tm-569-edu-meeting
                       <div class="price">
                         <span>$34.00</span>
                       </div>
-                      <a href="meeting_details.html"><img src="assets/images/meeting-02.jpg" alt=""></a>
+                      <a href="{% url 'meeting_details' %}"><img src="{% static 'assets/images/meeting-02.jpg' %}" alt=""></a>
                     </div>
                     <div class="down-content">
                       <div class="date">
                         <h6>Nov <span>22</span></h6>
                       </div>
-                      <a href="meeting_details.html"><h4>New Teaching Techniques</h4></a>
+                      <a href="{% url 'meeting_details' %}"><h4>New Teaching Techniques</h4></a>
                       <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
                     </div>
                   </div>
@@ -213,13 +213,13 @@ https://templatemo.com/tm-569-edu-meeting
                       <div class="price">
                         <span>$45.00</span>
                       </div>
-                      <a href="meeting_details.html"><img src="assets/images/meeting-03.jpg" alt=""></a>
+                      <a href="{% url 'meeting_details' %}"><img src="{% static 'assets/images/meeting-03.jpg' %}" alt=""></a>
                     </div>
                     <div class="down-content">
                       <div class="date">
                         <h6>Nov <span>24</span></h6>
                       </div>
-                      <a href="meeting_details.html"><h4>Technology Conference</h4></a>
+                      <a href="{% url 'meeting_details' %}"><h4>Technology Conference</h4></a>
                       <p>TemplateMo is the best website<br>when it comes to Free CSS.</p>
                     </div>
                   </div>
@@ -230,7 +230,7 @@ https://templatemo.com/tm-569-edu-meeting
                       <div class="price">
                         <span>$52.00</span>
                       </div>
-                      <a href="meeting_details.html"><img src="assets/images/meeting-01.jpg" alt=""></a>
+                      <a href="{% url 'meeting_details' %}"><img src="{% static 'assets/images/meeting-01.jpg'%}" alt=""></a>
                     </div>
                     <div class="down-content">
                       <div class="date">
@@ -247,13 +247,13 @@ https://templatemo.com/tm-569-edu-meeting
                       <div class="price">
                         <span>$64.00</span>
                       </div>
-                      <a href="meeting_details.html"><img src="assets/images/meeting-02.jpg" alt=""></a>
+                      <a href="{% url 'meeting_details' %}"><img src="{% static 'assets/images/meeting-02.jpg' %}" alt=""></a>
                     </div>
                     <div class="down-content">
                       <div class="date">
                         <h6>Nov <span>28</span></h6>
                       </div>
-                      <a href="meeting_details.html"><h4>Instant Lecture Design</h4></a>
+                      <a href="{% url 'meeting_details' %}"><h4>Instant Lecture Design</h4></a>
                       <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
                     </div>
                   </div>
@@ -264,13 +264,13 @@ https://templatemo.com/tm-569-edu-meeting
                       <div class="price">
                         <span>$74.00</span>
                       </div>
-                      <a href="meeting_details.html"><img src="assets/images/meeting-03.jpg" alt=""></a>
+                      <a href="{% url 'meeting_details' %}"><img src="{% static 'assets/images/meeting-03.jpg' %}" alt=""></a>
                     </div>
                     <div class="down-content">
                       <div class="date">
                         <h6>Nov <span>30</span></h6>
                       </div>
-                      <a href="meeting_details.html"><h4>Online Social Networking</h4></a>
+                      <a href="{% url 'meeting_details' %}"><h4>Online Social Networking</h4></a>
                       <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
                     </div>
                   </div>
@@ -292,25 +292,26 @@ https://templatemo.com/tm-569-edu-meeting
       </div>
     </div>
     <div class="footer">
-      <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. 
-          <br>Design: <a href="https://templatemo.com/page/1" target="_parent" title="website templates">TemplateMo</a></p>
+      <p>Copyright © 2024 Edu Learning co., Ltd. All Rights Reserved. 
+          <br>Design: <a href="https://haru-voster.github.io/portifolio/" target="_parent" title="website templates">HarounVoster</a></p>
     </div>
   </section>
 
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/tabs.js' %}"></script>
+    <script src="{% static 'assets/js/video.js' %}"></script>
+    <script src="{% static 'assets/js/slick-slider.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.js' %}"></script>
+    
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
